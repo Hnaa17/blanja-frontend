@@ -1,0 +1,316 @@
+@font-face {
+    font-family: 'metropolis';
+    src: url('../../components/module/home/metropolis.regular.otf');
+}
+
+.title-login{
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    /* font-family:monospace */
+}
+.nav-login {
+    margin: 0 18px 0 18px;
+}
+.costemer, .seler {
+    border: 1px solid #9B9B9B;
+    border-radius: 4px 0px 0px 4px;
+    background-color: #fff;
+    /* margin-left: 10px; */
+    color: #9B9B9B;
+}
+.selers {
+    border: 1px solid #9B9B9B;
+    border-radius: 0px 4px 4px 0px;
+  background-color: fff; 
+   color: rgb(20, 20, 20);
+}
+.selers:hover {
+    border: 1px solid #9B9B9B;
+    border-radius: 0px 4px 4px 0px;
+    background-color: #fff; 
+   color: rgb(22, 20, 20);
+}
+.seler {
+    border: 1px solid #9B9B9B;
+    border-radius: 0px 4px 4px 0px;
+    background-color: #32C33B; 
+    color: #ffffff;
+}
+.seler-login, .costemer-login{
+    background-color: #32C33B;
+    border-radius: 0 !important;
+    color: #fff;
+}
+.seler-login{
+    border-radius: 0px 5px 5px 0px;
+}
+.costemer{
+   background-color: #32C33B; 
+   color: #fff;
+}
+.costemers{
+   background-color: #fafafa; 
+   color: rgb(0, 0, 0);
+   border: 1px solid #9B9B9B;
+}
+.costemer:hover{
+    background-color: #32C33B ;
+    color: #fff;
+     border: 1px solid #9B9B9B;
+}
+.costemers:hover{
+    background-color: #ffffff ;
+    color: rgb(0, 0, 0);
+    border: 1px solid #9B9B9B;
+}
+.seler:hover{
+    background-color: #32C33B ;
+    color: #fff;
+    border: 1px solid #9B9B9B;
+    border-radius: 0 5px 5px 0;
+}
+/* ::-webkit-input-placeholder { 
+  font-size: 100px;
+} */
+.header-login{
+    padding: 0 15px 15px 15px;
+    text-align: center;
+}
+.form-signin {
+  width: 100%;
+  max-width: 400px;
+  padding: 5px;
+  margin-top: 50px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-sign{
+    background-color: #32C33B;
+    border-radius: 25px;
+    color: #fff;
+}
+.btn-sign:hover{
+    background-color: #32C33B;
+     color: #fff;
+}
+.float-end{
+    color: red;
+}
+.form-email, .form-password{
+    height: 48px !important;
+}
+.register{
+    color: #222222;
+    text-align: center;
+}
+.page-register, .page-login{
+    color: #cc2314;
+    margin-left: 4px;
+    cursor: pointer;
+    text-decoration:none;
+    text-align: center;
+}
+
+.header-login{
+    padding: 0 15px 15px 15px;
+    text-align: center;
+}
+.form-signin {
+  width: 100%;
+  max-width: 400px;
+  padding: 5px;
+  margin-top: 50px;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo{
+    text-align: center;
+    position:relative;
+    left: 10px;
+}
+
+.logo-login{
+    margin-top: 90px;
+}
+
+.logo-register{
+    margin-top: 60px;
+}
+
+.text-logo{
+
+    width: 85px;
+    height: 20px;
+    position: relative;
+    top: 10px;
+    left: -10px;
+
+    font-family: 'MetropolisRegular';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #DB3022;
+}
+
+.logo img{
+    position:relative;
+    left: -10px;
+}
+
+.text-open{
+    /* font-family: 'MetropolisRegular'; */
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222222;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.btn-register{
+    width: 123px;
+    height: 48px;
+    border: 1px solid #9B9B9B;
+    filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.05));
+}
+
+.btn-customer{
+    border-radius: 4px 0px 0px 4px;
+    margin-right: -2.5px;
+    color: #9B9B9B;
+}
+
+.btn-customer-click{
+    border-radius: 4px 0px 0px 4px;
+    margin-right: -2.5px;
+    background-color: #DB3022;
+    color: #FFFFFF;
+}
+
+
+
+
+
+.btn-seller{
+    border-radius: 0px 4px 4px 0px;
+    margin-left: -2.5px;
+    color: #9B9B9B;
+}
+
+.btn-seller-click{
+    border-radius: 0px 4px 4px 0px;
+    margin-left: -2.5px;
+    background-color: #DB3022;
+    color: #FFFFFF;
+}
+
+
+
+.tombol-aktif{
+    background-color: #DB3022;
+    color: #FFFFFF;
+}
+
+.tombol-nonaktif{
+    background-color: #FFFFFF;
+    color: #9B9B9B;
+}
+
+.btn-group-custom{
+    display: flex;
+    font-family: 'MetropolisRegular';
+    align-items: center;
+    margin-top: 40px;
+}
+
+.btn-group-custom-regis{
+    display: flex;
+    font-family: 'MetropolisRegular';
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-text{
+    /* font-family: 'MetropolisRegular'; */
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.text-link{
+    font-family: 'MetropolisRegular';
+    font-size: 14px;
+}
+
+.color-btn-group{
+    color: #9B9B9B;
+}
+
+.color-btn-group:hover{
+    color: #FFFFFF;
+}
+
+.text-link-red{
+    color: #DB3022;
+}
+
+.final-button{
+    background-color: #DB3022;
+    width: 100%;
+    border-radius: 40px;
+    color: #FFFFFF;
+    padding: 10px;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+
+.confirm{
+    font-family: 'MetropolisRegular';
+    font-size: 14px;
+    text-align: center;
+}
+
+.confirm-pass{
+    color: #F01F0E;
+}
+
+.confirm-login{
+    color: #9B9B9B;
+}
+
+.myform input{
+    padding: 10px;
+    width: calc(100% - 15px);
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.forgot-password{
+    margin-top: 10px;
+    color: #F01F0E;
+    font-size: 16px;
+    text-align: right;
+}
+
+.register{
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+}
+
+.texthana{
+    display: inline-block;
+    font-size: 16px;
+}
+
+.page-register{
+    color: #F01F0E;
+    margin-left: 5px;
+}

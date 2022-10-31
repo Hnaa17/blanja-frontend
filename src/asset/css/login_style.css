@@ -1,0 +1,128 @@
+.logo{
+    text-align: center;
+    position:relative;
+    left: 10px;
+}
+
+.logo-login{
+    margin-top: 90px;
+}
+
+.logo-register{
+    margin-top: 60px;
+}
+
+.text-logo{
+
+    width: 85px;
+    height: 20px;
+    position: relative;
+    top: 10px;
+    left: -10px;
+
+    font-family: 'MetropolisRegular';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 20px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #DB3022;
+}
+
+.logo img{
+    position:relative;
+    left: -10px;
+}
+
+.text-open{
+    font-family: 'MetropolisRegular';
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222222;
+}
+
+.btn-register{
+    width: 123px;
+    height: 48px;
+    border: 1px solid #9B9B9B;
+    filter: drop-shadow(0px 1px 8px rgba(0, 0, 0, 0.05));
+}
+
+.btn-customer{
+    border-radius: 4px 0px 0px 4px;
+    margin-right: -2.5px;
+}
+
+.btn-seller{
+    border-radius: 0px 4px 4px 0px;
+    margin-left: -2.5px;
+}
+
+.tombol-aktif{
+    background-color: #DB3022;
+    color: #FFFFFF;
+}
+
+.tombol-nonaktif{
+    background-color: #FFFFFF;
+    color: #9B9B9B;
+}
+
+.btn-group-custom{
+    display: flex;
+    font-family: 'MetropolisRegular';
+    align-items: center;
+    margin-top: 40px;
+}
+
+.btn-group-custom-regis{
+    display: flex;
+    font-family: 'MetropolisRegular';
+    align-items: center;
+    margin-top: 20px;
+}
+
+.input-text{
+    font-family: 'MetropolisRegular';
+    font-size: 10px;
+    letter-spacing: 1px;
+}
+
+.text-link{
+    font-family: 'MetropolisRegular';
+    font-size: 14px;
+}
+
+.color-btn-group{
+    color: #9B9B9B;
+}
+
+.color-btn-group:hover{
+    color: #FFFFFF;
+}
+
+.text-link-red{
+    color: #DB3022;
+}
+
+.final-button{
+    width: 100%;
+    border-radius: 50px;
+    background-color: #DB3022;
+}
+
+.confirm{
+    font-family: 'MetropolisRegular';
+    font-size: 14px;
+    text-align: center;
+}
+
+.confirm-pass{
+    color: #F01F0E;
+}
+
+.confirm-login{
+    color: #9B9B9B;
+}
