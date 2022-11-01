@@ -1,7 +1,7 @@
 import React, { useEffect, useState , Fragment} from "react";
 import "./StyleDetail.css";
-import { useDispatch, useSelector } from "react-redux";
-import { getDetail } from "../../../../configs/redux/actions/productsActions";
+// import { useDispatch, useSelector } from "react-redux";
+// import { getDetail } from "../../../../configs/redux/actions/productsActions";
 import axios from "axios";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import rectangle from "../../../../assets/image/detail products/Rectangle 21.png";
@@ -12,36 +12,16 @@ import { addMycart } from "../../../../configs/redux/actions/bagAction";
 import { Breadcrumb } from "react-bootstrap";
 import muslim1 from "../../../../asset/img/muslim-pria1.png";
 import stars from "../../../../asset/img/Rating 5 stars.png";
-// import muslim2 from "../../../../asset/img/muslim-pria2.png";
-// import muslim3 from "../../../../asset/img/muslim-pria3.png";
-// import muslim4 from "../../../../asset/img/muslim-pria4.png";
-// import muslim5 from "../../../../asset/img/muslim-pria5.png";
-// import muslim6 from "../../../../asset/img/muslim-pria1-mini.png";
 
 
 const Content = () => {
-    // const products = useSelector((state) => state.dataProduct.products);
-    // const dispatch = useDispatch();
-
     const { id } = useParams();
     const [products, setProducts] = useState([])
     const navigate = useNavigate()
-    // const fetchProducts = async () => {
-    //   const response = await axios
-    //     .get(`http://localhost:8000/products/${id}`)
-    //     .catch((err) => {
-    //       console.log(err);
-    //     });
-    //   dispatch(getDetail(response.data.data[0]));
-    // };
-    // useEffect(() => {
-    //   fetchProducts();
-    //   // eslint-disable-next-line react-hooks/exhaustive-deps
-    // }, []);
 
     useEffect(() => {
       axios
-        .get(`http://localhost:8000/products/${id}`)
+        .get(`${process.env.REACT_APP_BACKEND}products/${id}`)
         .then( (response)=> {
           setProducts(response.data.data);
           console.log(products);
@@ -80,13 +60,6 @@ const Content = () => {
      
     return (
       <Fragment>
-        {/* {(products.data).length === 0 ? (
-          <div class="text-center">
-            <FontAwesomeIcon icon={faSpinner} spin />
-            &nbsp;Loading
-          </div>
-        ) : ( */}
-        {/* {product.map((item) => ( */}
         <div className="container child-page">
         <Breadcrumb className="mt-3 mb-3">
             <Breadcrumb.Item href="/home">Home</Breadcrumb.Item>

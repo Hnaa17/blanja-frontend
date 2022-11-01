@@ -14,7 +14,6 @@ const createProduct = (data, saveImage, setShow) => async(dispatch) => {
         formData.append('category_id', data.category_id)
         formData.append('product_condition', data.product_condition)
         formData.append('descript', data.descript)
-        // formData.append('transactions_id', data.transactions_id)
         const products = await axios.post(`http://localhost:8000/products`, formData ,{
             headers: {
                 "Content-Type": "multipart/form-data",

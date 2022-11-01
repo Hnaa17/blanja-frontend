@@ -52,41 +52,6 @@ const ModalCreate = ({children}) => {
       window.location.reload(false);
     };
 
-    // const handleCreate = (e) => {
-    //     e.preventDefault = (e) => {
-    //         const formData = new FormData();
-    //         formData.append('product_name', data.product_name)
-    //         formData.append('stock', data.stock)
-    //         formData.append('price', data.price)
-    //         // formData.append('color', data.color)
-    //         formData.append('size', data.size)
-    //         formData.append('product_condition', data.product_condition)
-    //         formData.append('descript', data.descript)
-    //         formData.append('seller_id', data.seller_id)
-    //         formData.append('category_id', data.category_id)
-    //         formData.append('photo', photo)
-    //         axios
-    //         .post(`http://localhost:8000/products${formData}`, {
-    //             headers: {
-    //                 "Content-Type": "multipart/form-data",
-    //             },
-    //         })
-    //         .then((res) => {
-    //             console.log(res);
-    //             Swal.fire({
-    //                 title: "Success",
-    //                 text: "New Products Created",
-    //                 icon: "success"
-    //             })
-    //             setShow(false)
-    //         })
-    //         .catch((err) => {
-    //             console.log(err);
-    //             alert(err)
-    //             setShow(false)
-    //         })
-    //     }
-
         return (
             <Fragment>
             <button
