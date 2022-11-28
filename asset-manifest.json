@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/blanja-frontend/static/css/main.3451a5ea.css",
+    "main.js": "/blanja-frontend/static/js/main.1b1b3d21.js",
+    "static/js/787.61f08688.chunk.js": "/blanja-frontend/static/js/787.61f08688.chunk.js",
+    "static/media/muslim-pria1.png": "/blanja-frontend/static/media/muslim-pria1.3c0b0e8d62af2b6b9e82.png",
+    "static/media/slide1.png": "/blanja-frontend/static/media/slide1.8d37b1b335e60b7506e3.png",
+    "static/media/slide2.png": "/blanja-frontend/static/media/slide2.fe81ad48c0c49946ebff.png",
+    "static/media/category5.png": "/blanja-frontend/static/media/category5.64695df56782b927bea3.png",
+    "static/media/category4.png": "/blanja-frontend/static/media/category4.679a47a831345335c54d.png",
+    "static/media/profil-avatar.png": "/blanja-frontend/static/media/profil-avatar.48429f224e71961c4533.png",
+    "static/media/metropolis.regular.otf": "/blanja-frontend/static/media/metropolis.regular.67a1988d7b65b0aaa16d.otf",
+    "static/media/category2.png": "/blanja-frontend/static/media/category2.4627486e8dec7976bc6d.png",
+    "static/media/category3.png": "/blanja-frontend/static/media/category3.56d8de77eccc8440f9df.png",
+    "static/media/category1.png": "/blanja-frontend/static/media/category1.6d53bd686d800cfd13f0.png",
+    "static/media/formal-suits.png": "/blanja-frontend/static/media/formal-suits.da30b4baa509de4da838.png",
+    "static/media/search.svg": "/blanja-frontend/static/media/search.b6aedd618eafc98737531d10b416b19e.svg",
+    "index.html": "/blanja-frontend/index.html",
+    "main.3451a5ea.css.map": "/blanja-frontend/static/css/main.3451a5ea.css.map",
+    "main.1b1b3d21.js.map": "/blanja-frontend/static/js/main.1b1b3d21.js.map",
+    "787.61f08688.chunk.js.map": "/blanja-frontend/static/js/787.61f08688.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3451a5ea.css",
+    "static/js/main.1b1b3d21.js"
+  ]
+}
