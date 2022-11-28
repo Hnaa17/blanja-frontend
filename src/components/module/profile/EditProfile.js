@@ -42,7 +42,7 @@ const EditProfile = () => {
     data.append("image", image);
     e.preventDefault();
     axios
-      .put(`http://localhost:8000/users/update-profile`, data, {
+      .put(`${process.env.REACT_APP_BACKEND}users/update-profile`, data, {
         headers: {
           Authorization: `Bearer ${token}`,
         },
@@ -75,7 +75,7 @@ const EditProfile = () => {
   const datas = async () => {
     const token = localStorage.getItem("token");
     const response = await axios.get(
-      `http://localhost:8000/users/profile`,
+      `${process.env.REACT_APP_BACKEND}users/profile`,
       {
         headers: {
           Authorization: `Bearer ${token}`,

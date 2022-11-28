@@ -17,7 +17,7 @@ const Card = () => {
     // const [products, setProducts] = useState([]);
     const fetchProducts = async () => {
         const response = await axios
-          .get(`http://localhost:8000/products`)
+          .get(`${process.env.REACT_APP_BACKEND}products`)
           .catch((err) => {
             console.log(err);
           });

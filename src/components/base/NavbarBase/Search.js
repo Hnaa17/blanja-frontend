@@ -26,7 +26,7 @@ const Search = () => {
 
     function getData() {
         axios
-        .get(`http://localhost:8000/products?search=${search}&sortby=product_name&sort=${sort}&page=1&limit=10`)
+        .get(`${process.env.REACT_APP_BACKEND}products?search=${search}&sortby=product_name&sort=${sort}&page=1&limit=10`)
         .then((response) => {
             setProducts(response.data.data);
         })
