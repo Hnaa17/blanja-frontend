@@ -1,33 +1,40 @@
-import { createStore, applyMiddleware } from "redux";
+// import { createStore, applyMiddleware } from "redux";
+import {applyMiddleware, createStore} from "@reduxjs/toolkit";
 import rootReducer from "./reducers/rootReducer";
 import logger from "redux-logger";
 import thunk from "redux-thunk";
-import { persistStore, persistReducer } from "redux-persist";
-import storage from "redux-persist/lib/storage";
+// import { persistStore, persistReducer } from "redux-persist";
+// import storage from "redux-persist/lib/storage";
 
-import { configureStore } from "@reduxjs/toolkit";
-import HomeProductNewReducer from "./Slice/HomeProductSlice";
-import SearchProductReducer from "./Slice/SearchProductSlice"
+// import { configureStore } from "@reduxjs/toolkit";
+// import HomeProductNewReducer from "./Slice/HomeProductSlice";
+// import SearchProductReducer from "./Slice/SearchProductSlice"
 
-const persistConfig = {
-    key: "auth",
-    key: "refreshToken",
-    storage: storage,
-    whitelist: ["auth"],
-};
+const store = createStore(rootReducer, applyMiddleware(thunk, logger)
+);
 
-const pReducer = persistReducer(persistConfig, rootReducer);
-const middleware = applyMiddleware(thunk, logger);
-const store = createStore(pReducer, middleware);
-const persistor = persistStore(store);
-export { persistor, store };
+export default store;
 
-export default configureStore({
-    reducer: {
-        HomeProductNew: HomeProductNewReducer,
-        SearchProduct : SearchProductReducer,
-    }
-});
+// const persistConfig = {
+//     key: "auth",
+//       // eslint-disable-next-line no-dupe-keys
+//     // key: "refreshToken",
+//     storage: storage,
+//     whitelist: ["auth"],
+// };
+
+// const pReducer = persistReducer(persistConfig, rootReducer);
+// const middleware = applyMiddleware(thunk, logger);
+// const store = createStore(pReducer, middleware);
+// const persistor = persistStore(store);
+// export { persistor, store };
+
+// export default configureStore({
+//     reducer: {
+//         HomeProductNew: HomeProductNewReducer,
+//         SearchProduct : SearchProductReducer,
+//     }
+// });
 
 // import React from 'react';
 

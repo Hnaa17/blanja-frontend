@@ -10,12 +10,12 @@ import '../StyleHome.css'
 import { getCategory } from "../../../../configs/redux/actions/categoryAction";
 
 const Category = () => {
-    const {category} = useSelector((state) => state.getCategory);
-    console.log(category);
-    const dispatch = useDispatch();
-    useEffect(() => {
-        dispatch(getCategory());
-    }, []);
+    // const {category} = useSelector((state) => state.getCategory);
+    // console.log(category);
+    // const dispatch = useDispatch();
+    // useEffect(() => {
+    //     dispatch(getCategory());
+    // }, []);
 
     return (
         <div className="container mt-5 mb-5">

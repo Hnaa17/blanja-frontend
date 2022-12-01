@@ -21,6 +21,7 @@ const LoginSeller = () => {
       setFormLogin({
         ...formLogin,
         [e.target.name]: e.target.value,
+        role: "seller"
       });
  };
  console.log(formLogin.email)

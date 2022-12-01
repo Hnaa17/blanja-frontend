@@ -34,30 +34,31 @@ function Router() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Navigate to="/Home" replace="true" />} />
+                <Route path="/blanja-frontend" element={<Navigate to="/Home" replace="true" />} />
                 <Route path="/home" element={<Home />} />
 
                 <Route path="/register" element={
-                    <AfterLogin>
+                    // <AfterLogin>
                         <Register />
-                    </AfterLogin>
+                    // </AfterLogin>
                 } />
 
                 <Route path="/registerSeller" element={
-                    <AfterLogin>
+                    // <AfterLogin>
                         <RegisterSeller />
-                    </AfterLogin>
+                    // </AfterLogin>
                 } />
 
                 <Route path="/login" element={
-                    <AfterLogin>
+                    // <AfterLogin>
                         <Login />
-                    </AfterLogin>
+                    // </AfterLogin>
                 } />
 
                 <Route path="/loginSeller" element={
-                    <AfterLogin>
+                    // <AfterLogin>
                         <LoginSeller />
-                    </AfterLogin>
+                    // </AfterLogin>
                 } />
 
                 <Route path="/forgot_pass" element={
@@ -78,9 +79,9 @@ function Router() {
                     path="/productList" 
                     element={
                         <RequireAuth> 
-                            <Role>
+                            {/* <Role> */}
                                 <ProductList />
-                            </Role>
+                            {/* </Role> */}
                         </RequireAuth>
                     } 
                 />

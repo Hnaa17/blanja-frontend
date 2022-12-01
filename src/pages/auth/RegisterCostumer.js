@@ -2,9 +2,6 @@ import React, { useState }from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./style2.css";
 import vektor from "../../assets/image/logo.png"
-// import blanja from "../../assets/image/Blanja.png"
-// import PropTypes from "prop-types";
-// import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import {signUp} from "../../configs/redux/actions/userActions";
 
@@ -15,8 +12,7 @@ const Register = ({ label, ...props }) => {
     const [user, setUser] = useState({
         fullname: "",
         email: "",
-        password: "",
-        role: "buyer"
+        password: ""
     });
 
         if (auth === user) {

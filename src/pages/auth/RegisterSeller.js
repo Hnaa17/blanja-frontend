@@ -7,7 +7,7 @@ import vektor from "../../assets/image/logo.png";
 // import PropTypes from "prop-types";
 // import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
-import { signUp } from "../../configs/redux/actions/userActions";
+import { signUpSeller } from "../../configs/redux/actions/userActions";
 
 const RegisterSeller = ({ label, ...props }) => {
     const navigate = useNavigate();
@@ -17,9 +17,8 @@ const RegisterSeller = ({ label, ...props }) => {
         fullname: "",
         email: "",
         phone: "",
-        storename: "",
-        password: "",
-        role: "seller",
+        store_name: "",
+        password: ""
     });
 
         if (auth === user) {
@@ -36,7 +35,7 @@ const RegisterSeller = ({ label, ...props }) => {
 
     const handleLogin = (e) => {
         e.preventDefault();
-        dispatch(signUp(user, navigate));
+        dispatch(signUpSeller(user, navigate));
     };
 
     if (auth.id) return navigate("/login");
@@ -106,10 +105,10 @@ const RegisterSeller = ({ label, ...props }) => {
               <div className="form-floating">
                 <input
                   id="floatingInput"
-                  name="storename"
+                  name="store_name"
                   type="text"
                   {...props}
-                  value={user.storename}
+                  value={user.store_name}
                   onChange={handleChange}
                   placeholder="Store"
                   className="form-control"

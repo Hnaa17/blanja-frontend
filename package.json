@@ -1,7 +1,6 @@
 {
   "name": "blanja-frontend",
   "version": "0.1.0",
-  "homepage": "https://Hnaa17.github.io/blanja-frontend",
   "private": true,
   "dependencies": {
     "@arismun/format-rupiah": "^3.0.0",
