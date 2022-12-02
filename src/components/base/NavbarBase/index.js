@@ -18,6 +18,7 @@ import kaca from "../../../asset/img/search.png";
 
 const NavbarBase = ({ onChange, onClick, src, srcCart }) => {
     const { user } = useSelector((state) => state.auth);
+    const token = localStorage.getItem("token");
     const dispatch = useDispatch();
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
@@ -151,7 +152,7 @@ const NavbarBase = ({ onChange, onClick, src, srcCart }) => {
             </button>
           </ul> */}
 
-          {user?.id ? (
+          {token ? (
             <>
               <form className="ms-4">
                 <Link to="/cart">

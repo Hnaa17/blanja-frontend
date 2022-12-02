@@ -56,9 +56,9 @@ export const signUp = (dataForm, navigate) => async(dispatch) => {
         );
         const user = result.data.data;
 
-        localStorage.setItem("token", user.token);
-        localStorage.setItem("id", user.id);
-        localStorage.setItem("refreshToken", user.refreshToken);
+        // localStorage.setItem("token", user.token);
+        // localStorage.setItem("id", user.id);
+        // localStorage.setItem("refreshToken", user.refreshToken);
         dispatch({type: "USER_REGISTER_SUCCESS", payload: user});
           Swal.fire({
             icon: "success",
@@ -86,9 +86,9 @@ export const signUpSeller = (dataForm, navigate) => async(dispatch) => {
         );
         const user = result.data.data;
 
-        localStorage.setItem("token", user.token);
-        localStorage.setItem("id", user.id);
-        localStorage.setItem("refreshToken", user.refreshToken);
+        // localStorage.setItem("token", user.token);
+        // localStorage.setItem("id", user.id);
+        // localStorage.setItem("refreshToken", user.refreshToken);
         dispatch({type: "USER_REGISTER_SUCCESS", payload: user});
           Swal.fire({
             icon: "success",

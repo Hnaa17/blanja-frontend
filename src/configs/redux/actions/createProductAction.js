@@ -10,7 +10,7 @@ const createProduct = (data, saveImage, setShow) => async(dispatch) => {
         formData.append('price', data.price)
         formData.append('size', data.size)
         formData.append('stock', data.stock)
-        formData.append('photo', saveImage);
+        formData.append('photo', saveImage)
         formData.append('category_id', data.category_id)
         formData.append('product_condition', data.product_condition)
         formData.append('descript', data.descript)

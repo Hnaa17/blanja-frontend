@@ -12,7 +12,7 @@ const ModalCreate = ({children}) => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const [saveImage, setSaveImage]  = useState(null);
-  const id = localStorage.getItem("id");
+  const idSeller = localStorage.getItem("id");
 
   function handleUpload(e) {
     console.log(e.target.files[0]);
@@ -22,7 +22,7 @@ const ModalCreate = ({children}) => {
 
     const [data, setData] = useState({
         product_name:"",
-        seller_id:id,
+        seller_id: idSeller,
         price:"",
         size:"",
         stock:"",
@@ -78,14 +78,14 @@ const ModalCreate = ({children}) => {
               value={data.product_name}
               onChange={handleChange}
             />
-            {/* <input
+            <input
               className="form-control mt-3"
               type="text"
               placeholder="Seller id"
               name="seller_id"
               value={data.seller_id}
               onChange={handleChange}
-            /> */}
+            />
             <input
               className="form-control mt-3"
               type="text"

@@ -10,9 +10,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import axios from "axios";
 
-const Profile = ({
-  children,
-}) => {
+const Profile = () => {
   const { user } = useSelector((state) => state.auth);
   useEffect(() => {
     datas();
@@ -62,12 +60,12 @@ const Profile = ({
       <div className="profil-select">
         <ul>
           <div className="mb-1 mt-3">
-            <a className="text-primary text-decoration-none text-danger" href="/productList">
+            <Link className="text-primary text-decoration-none text-danger" to={"/productList"}>
               MyProducts
-            </a>
-            <div className="collapse show" id="dashboard-collapse">
+            </Link>
+            {/* <div className="collapse show" id="dashboard-collapse">
               {children}
-            </div>
+            </div> */}
           </div>
         </ul>
       </div>

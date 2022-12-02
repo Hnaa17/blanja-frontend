@@ -20,13 +20,12 @@ import Swal from "sweetalert2";
 import { useSelector } from "react-redux";
 
 const Role = ({ children }) => {
-    const { user } = useSelector((state) => state.auth);
-    console.log(user)
-   if (user.role !== "seller") {
-     Swal.fire("You are not a seller!");
-     return <Navigate to="/profile" replace />;
-   }
-   return children;
+    const roleUser = localStorage.getItem("user");
+    if (roleUser !== "seller") {
+        Swal.fire("You are not a seller!");
+        return <Navigate to="/profile" replace />;
+    }
+    return children;
  };
 
 function Router() {
@@ -38,27 +37,27 @@ function Router() {
                 <Route path="/home" element={<Home />} />
 
                 <Route path="/register" element={
-                    // <AfterLogin>
+                    <AfterLogin>
                         <Register />
-                    // </AfterLogin>
+                    </AfterLogin>
                 } />
 
                 <Route path="/registerSeller" element={
-                    // <AfterLogin>
+                    <AfterLogin>
                         <RegisterSeller />
-                    // </AfterLogin>
+                    </AfterLogin>
                 } />
 
                 <Route path="/login" element={
-                    // <AfterLogin>
+                    <AfterLogin>
                         <Login />
-                    // </AfterLogin>
+                    </AfterLogin>
                 } />
 
                 <Route path="/loginSeller" element={
-                    // <AfterLogin>
+                    <AfterLogin>
                         <LoginSeller />
-                    // </AfterLogin>
+                    </AfterLogin>
                 } />
 
                 <Route path="/forgot_pass" element={
@@ -79,9 +78,9 @@ function Router() {
                     path="/productList" 
                     element={
                         <RequireAuth> 
-                            {/* <Role> */}
+                            <Role>
                                 <ProductList />
-                            {/* </Role> */}
+                            </Role>
                         </RequireAuth>
                     } 
                 />
